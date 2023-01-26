@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Document</title>
+</head>
+<body>
+<script>
+let car = {
+fuelType: "",
+type: "",
+brand: "",
+isFuelType: function (fuelType) {
+this.fuelType = fuelType;
+},
+isType: function (type) {
+this.type = type;
+},
+isBrand: function (brand) {
+this.brand = brand;
+}
+};
+car.isFuelType('CNG');
+car.isType('SUV');
+car.isBrand('BMW');
+
+console.log(car);
+</script>
+</body>
+</html>

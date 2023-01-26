@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+
+<body>
+<h2>Prime Number</h2>
+<h3>enter the high no:</h3><input type="text" id="limit" value="">
+<h3>enter the low no:</h3><input type="text" id="limit2" value="">
+<button onclick="fun()">Submit</button>
+<br>
+<div id="result">Result:</div>
+
+<script>
+function fun() {
+let limit = document.getElementById('limit').value;
+let limit2 = document.getElementById('limit2').value;
+let result = document.getElementById("result");
+result.innerHTML = "Result: ";
+
+
+for (let i = limit; i <= limit2; i++) {
+let prime = true;
+for (let j = 2; j < i; j++) {
+if (i % j == 0) {
+prime = false;
+break;
+}
+}
+if (prime) {
+result.insertAdjacentHTML('beforeend', i + ',');
+}
+}
+}
+</script>
+</body>
+</html>
