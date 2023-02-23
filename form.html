@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="nameerr"></span><br>
+    <span id="Iderr"></span><br>
+    <span id="Semerr"></span><br>
+    <span id="suberr"></span><br>
+    <br>
+    <form name="studentfrm" action="https://www.google.com/yuvi.php" method="post">
+        name : <input type="text" name="name" placeholder="Enter your name.."/>
+       
+        <br><br>
+        Id : <input type="text" name="Id"  placeholder="Enter your id.." />
+        
+        <br><br>
+        Sem : <input type="text" name="Sem"  placeholder="Enter your Sem.." />
+        
+        <br><br>
+        <input type="checkbox" name="subject[]">
+        <label for="s1">dsa</label><br>
+        <input type="checkbox" name="subject[]">
+        <label for="s1">dbms</label><br>
+        <input type="checkbox" name="subject[]">
+        <label for="s1">comi</label><br>
+        <input type="checkbox" name="subject[]">
+        <label for="s1">wt</label><br><br>
+        
+        <input type="button" value="Register" onclick="validation();"/>
+        
+    </form>
+    <script src="form.js"></script>
+</body>
+</html>

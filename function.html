@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const myfun= (a,b) => {
+            return a+b;
+        }
+        const result= myfun(9,8);
+        alert(result);
+
+        fun=()=>{
+            console.log("fun call");
+        }
+
+        fun1=(fun)=>{
+            fun();
+            console.log("fun1 call");
+        }
+
+        fun1(fun);
+
+        const myfun1=(...a)=>{
+            let s=0;
+            for (const i of a) {
+                s=s+i;
+            }
+            return s;
+        }
+
+        let ans=myfun1(1,2,3,4,5);
+        alert(ans);
+
+        let[a,b,c,d]=[1,2,3,4]
+        alert(b);
+
+        let person={
+            name:"abc",
+            id : 123,
+            sub:
+            {
+                maths:1,
+                wt:2,
+            },
+        }
+
+        let{
+            name:n,
+            sub:{maths},
+        } = person;
+        alert(maths);
+    </script>
+</body>
+</html>
